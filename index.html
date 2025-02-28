@@ -1,0 +1,129 @@
+---
+---
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{{ site.toolbar.title }}</title>
+        <link rel="stylesheet" href="/assets/css/styles.css">
+    </head>
+    <body>
+        <div class="toolbar">
+            <div class="toolbar-logo">
+                <img src="{{ site.toolbar.logo }}" alt="logo">
+                <div class="toolbar-title">
+                    <p class="site-title">{{site.toolbar.title}}</p>
+                    <p class="site-subtitle">{{site.toolbar.subtitle}}</p>
+                </div>
+            </div>
+            <div class="toolbar-menu">
+                {% for item in site.toolbar.menu %}
+                    <a class="toolbar-menu-item" href="{{item.url}}">{{item.title}}</a>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="page">
+            <div id="about"></div>
+            <div class="tagline">
+                <div class="tagline-image">
+                    <img src="{{site.about.background}}" alt="background">
+                </div>
+                <div class="tagline-text">
+                    <p class="short">{{site.about.short}}</p>
+                    <p class="long">{{site.about.long}}</p>
+                </div>
+            </div>
+
+            <p class="section-title" id="research">Research</p>
+            <div class="research">
+                <div class="research-title">
+                    <h2>{{site.research.title}}</h2>
+                </div>
+                <div class="research-content">
+                    {% for item in site.research %}
+                    {% assign remainder = forloop.index | modulo: 2 %}
+                        <div class="research-section" style="flex-direction: {% if remainder == 0 %}row-reverse{% else %}row{% endif %};">
+                            <div class="research-image">
+                                <img src="{{item.image}}" alt="image">
+                            </div>
+                            <div class="research-content">
+                                <p class="research-title">{{item.title}}</p>
+                                <p calss="research-desscription">{{item.description}}</p>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <p class="section-title" id="members">Lab members</p>
+            <div class="members">
+            {% for member in site.members %}
+                <div class="member-card">
+                    <div class="member-image">
+                        <img src="{{member.image}}" alt="image">
+                    </div>
+                    <div class="member-content">
+                        <p class="member-name">{{member.name}}</p>
+                        <p class="member-title">{{member.position}}</p>
+                        <div class="member-links">
+                            {% if member.orcid != "" %}
+                                <img src="/assets/images/icons/orcid_logo.png" alt="orcid-logo">
+                            {% endif %}
+                            {% if member.linkedin != "" %}
+                                <img src="/assets/images/icons/linkedin_logo.png" alt="linkedin-logo">
+                            {% endif %}
+                            {% if member.bsky != "" %}
+                                <img src="/assets/images/icons/bluesky_logo.png" alt="bsky-logo">
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+
+            <p class="section-title">Lab alumni</p>
+            <div class="members">
+            {% for member in site.members %}
+                <div class="member-card">
+                    <div class="member-image">
+                        <img src="{{member.image}}" alt="image">
+                    </div>
+                    <div class="member-content">
+                        <p class="member-name">{{member.name}}</p>
+                        <p class="member-title">{{member.position}}</p>
+                        <div class="member-links">
+                            {% if member.orcid != "" %}
+                                <img src="/assets/images/icons/orcid_logo.png" alt="orcid-logo">
+                            {% endif %}
+                            {% if member.linkedin != "" %}
+                                <img src="/assets/images/icons/linkedin_logo.png" alt="linkedin-logo">
+                            {% endif %}
+                            {% if member.bsky != "" %}
+                                <img src="/assets/images/icons/bluesky_logo.png" alt="bsky-logo">
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+
+            <div class="sponsors">
+                {% for sponsor in site.sponsors %}
+                    <img src="{{sponsor.image}}" alt="sponsor">
+                {% endfor %}
+            </div>
+
+            <p class="section-title" id="publications">Publications</p>
+            <div class="publications">
+                {% for publication in site.publications %}
+                    <div class="publication">
+                        <p class="publication-title">{{publication.title}}</p>
+                        <p class="publication-authors">{{publication.authors}}</p>
+                        <p class="publication-journal">{{publication.journal}}</p>
+                        <p class="publication-year">{{publication.year}}</p>
+                        <p class="publication-link"><a href="{{publication.link}}">Link</a></p>
+                    </div>
+                {% endfor %}
+            </div>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,255 @@
+body {
+  font-family: 'Roboto';
+  font-weight: 300;
+  display: flex;
+  margin: 0; }
+
+.toolbar {
+  position: fixed;
+  top: 0;
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); }
+  .toolbar .toolbar-logo {
+    display: flex;
+    flex-direction: row;
+    padding: 6px 8px 8px 8px; }
+    .toolbar .toolbar-logo img {
+      height: 45px;
+      margin-right: 8px; }
+    .toolbar .toolbar-logo .toolbar-title {
+      display: flex;
+      flex-direction: column; }
+      .toolbar .toolbar-logo .toolbar-title p {
+        margin: 0; }
+      .toolbar .toolbar-logo .toolbar-title .site-title {
+        font-size: 22px;
+        font-family: 'Helvetica';
+        font-weight: 800; }
+      .toolbar .toolbar-logo .toolbar-title .site-motto {
+        font-size: 18px; }
+  .toolbar .toolbar-menu {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: 6px; }
+    .toolbar .toolbar-menu .toolbar-menu-item {
+      margin-left: 6px;
+      margin-right: 6px;
+      font-size: 16px;
+      text-decoration: none;
+      color: #000; }
+
+.page {
+  display: flex;
+  flex-direction: column;
+  margin-top: 56px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1440px; }
+
+.tagline {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 500px;
+  height: calc(50vh - 56px);
+  padding-bottom: 112px; }
+  .tagline .tagline-image {
+    display: flex;
+    flex-shrink: unset;
+    width: 50%;
+    overflow: visible; }
+    .tagline .tagline-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .tagline .tagline-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%; }
+    .tagline .tagline-text p.short {
+      padding-left: 32px;
+      padding-right: 32px;
+      line-height: 1.5;
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 0; }
+    .tagline .tagline-text p.long {
+      padding-left: 32px;
+      padding-right: 32px;
+      padding-bottom: 16px;
+      line-height: 1.5; }
+
+.section-title {
+  font-size: 18px;
+  font-weight: 400;
+  margin: auto;
+  margin-bottom: 56px;
+  width: 100%;
+  text-align: left;
+  padding-left: 18px; }
+
+a.anchor {
+  margin-top: 56px;
+  transform: translateY(-56px); }
+
+.research {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+  .research .research-section {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 32px; }
+    .research .research-section .research-image {
+      width: 50%;
+      height: 100%;
+      background-color: #efefef; }
+    .research .research-section .research-content {
+      width: 50%;
+      padding-left: 36px;
+      padding-right: 36px;
+      padding-bottom: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .research .research-section .research-content .research-title {
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 12px;
+        width: 100%; }
+      .research .research-section .research-content .research-description {
+        line-height: 1.5;
+        width: 100%; }
+
+.members {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 56px;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 18px;
+  row-gap: 32px;
+  justify-content: center; }
+  .members .member-card {
+    width: max-content;
+    min-width: 350px;
+    height: 250px;
+    background-color: #efefef;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .members .member-card .member-image {
+      display: flex;
+      margin-left: 28px;
+      width: 120px;
+      height: 120px;
+      border-radius: 100%;
+      background-color: #FFF; }
+    .members .member-card .member-content {
+      padding-left: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .members .member-card .member-content .member-name {
+        font-size: 18px;
+        font-weight: 400;
+        text-align: left;
+        margin-top: 4px;
+        margin-bottom: 0;
+        margin-right: 28px; }
+      .members .member-card .member-content .member-title {
+        font-size: 16px;
+        text-align: left;
+        margin-top: 4px;
+        margin-right: 28px;
+        color: #8a8a8a; }
+      .members .member-card .member-content .member-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 8px;
+        margin-bottom: 36px; }
+        .members .member-card .member-content .member-links img {
+          height: 28px;
+          width: 28px;
+          margin-left: 4px;
+          margin-right: 4px; }
+
+.sponsors {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: min-content; }
+  .sponsors .sponsor {
+    margin: auto;
+    width: 25vw;
+    height: 5vw; }
+    .sponsors .sponsor img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; }
+
+@media (max-width: 1080px) {
+  .tagline .tagline-image {
+    display: none; }
+  .tagline .tagline-text {
+    width: 60%; }
+
+  .member-card {
+    width: 200px;
+    height: max-content;
+    background-color: #efefef;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .member-card .member-image {
+      display: flex;
+      margin-top: 28px;
+      width: 120px;
+      height: 120px;
+      border-radius: 100%;
+      background-color: #FFF; }
+    .member-card .member-content {
+      padding-top: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .member-card .member-content .member-name {
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 4px;
+        margin-bottom: 0; }
+      .member-card .member-content .member-title {
+        font-size: 16px;
+        text-align: center;
+        margin-top: 4px;
+        color: #8a8a8a; }
+      .member-card .member-content .member-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 8px;
+        margin-bottom: 36px; }
+        .member-card .member-content .member-links img {
+          height: 28px;
+          width: 28px;
+          margin-left: 4px;
+          margin-right: 4px; } }

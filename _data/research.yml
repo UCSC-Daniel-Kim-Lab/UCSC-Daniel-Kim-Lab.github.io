@@ -1,0 +1,6 @@
+- title: Regulation of transposable elements and RNA secretion
+  description: We employ tissue culture models of disease to study how oncogenic signaling like mutant KRAS impact the development of human induced pluripotent stem cells through RNA sequencing, and how these changes in the transcriptome are reflected in the secreted exosomes.
+  image: /assets/images/teaser1.jpg
+- title: Modeling cancer transcriptomic signatures in the blood plasma of patients
+  description: We are studying the viability of RNA-sequencing based cancer tests by training advanced machine larning models on data derived from human blood plasma of patients with cancer towards the development of a non-invasive RNA liquid biopsy technology.
+  image: /assets/images/teaser2.jpg

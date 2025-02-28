@@ -1,0 +1,42 @@
+- name: Daniel Kim
+  position: PI
+  image: /assets/images/daniel_kim.jpg
+  orcid: xxx
+  linkedin: xxx
+  bsky: xxx
+- name: Andy Davidson
+  position: PhD Candidate
+  image: /assets/images/daniel_kim.jpg
+  orcid: xxx
+  linkedin: xxx
+  bsky: xxx
+- name: Vikas Peddu
+  position: PhD Candidate
+  image: /assets/images/daniel_kim.jpg
+  orcid: xxx
+  linkedin: xxx
+  bsky: xxx
+- name: Alex Hill
+  position: PhD Student
+  image: /assets/images/daniel_kim.jpg
+  orcid: 0000-0001-8903-0297
+  linkedin: alexanderdhill
+  bsky: https://bsky.app/profile/alexdhill.xyz
+- name: Connor Mattingly
+  position: PhD Student
+  image: /assets/images/daniel_kim.jpg
+  orcid: ""
+  linkedin: ""
+  bsky: ""
+- name: Shivani Mandalaparthi
+  position: Undergraduate
+  image: /assets/images/daniel_kim.jpg
+  orcid: ""
+  linkedin: ""
+  bsky: ""
+- name: Piper Mahn
+  position: Undergraduate
+  image: /assets/images/daniel_kim.jpg
+  orcid: ""
+  linkedin: ""
+  bsky: ""
