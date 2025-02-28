@@ -36,9 +36,6 @@
 
             <p class="section-title" id="research">Research</p>
             <div class="research">
-                <div class="research-title">
-                    <h2>{{site.research.title}}</h2>
-                </div>
                 <div class="research-content">
                     {% for item in site.research %}
                     {% assign remainder = forloop.index | modulo: 2 %}
@@ -79,10 +76,11 @@
                     </div>
                 </div>
             {% endfor %}
+            </div>
 
             <p class="section-title">Lab alumni</p>
             <div class="members">
-            {% for member in site.members %}
+            {% for member in site.alumni %}
                 <div class="member-card">
                     <div class="member-image">
                         <img src="{{member.image}}" alt="image">
@@ -104,6 +102,7 @@
                     </div>
                 </div>
             {% endfor %}
+            </div>
 
             <div class="sponsors">
                 {% for sponsor in site.sponsors %}
@@ -114,13 +113,15 @@
             <p class="section-title" id="publications">Publications</p>
             <div class="publications">
                 {% for publication in site.publications %}
-                    <div class="publication">
-                        <p class="publication-title">{{publication.title}}</p>
-                        <p class="publication-authors">{{publication.authors}}</p>
-                        <p class="publication-journal">{{publication.journal}}</p>
-                        <p class="publication-year">{{publication.year}}</p>
-                        <p class="publication-link"><a href="{{publication.link}}">Link</a></p>
-                    </div>
+                    <p class="publication">
+                        {{publication.title}}. 
+                        {{publication.authors}}, 
+                        <i>{{publication.journal}}.</i>
+                        <b>{{publication.volume}}</b>({{publication.issue}})
+                        pp{{publication.pages}}.
+                        {{publication.date}}
+                        <a href="{{publication.link}}">doi:{{publication.doi}}</a>
+                    </p>
                 {% endfor %}
             </div>
 

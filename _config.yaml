@@ -23,74 +23,80 @@ about:
 research:
 - title: Regulation of transposable elements and RNA secretion
   description: We employ tissue culture models of disease to study how oncogenic signaling like mutant KRAS impact the development of human induced pluripotent stem cells through RNA sequencing, and how these changes in the transcriptome are reflected in the secreted exosomes.
-  image: /assets/images/teaser1.jpg
+  image: /assets/images/teasers/sree_wetlab.jpg
 - title: Modeling cancer transcriptomic signatures in the blood plasma of patients
   description: We are studying the viability of RNA-sequencing based cancer tests by training advanced machine larning models on data derived from human blood plasma of patients with cancer towards the development of a non-invasive RNA liquid biopsy technology.
-  image: /assets/images/teaser2.jpg
+  image: /assets/images/teasers/roman_drylab.jpg
 
 members:
 - name: Daniel Kim
   position: PI
-  image: /assets/images/mambers/daniel_kim.jpg
+  image: /assets/images/members/daniel_kim.jpg
   orcid: xxx
   linkedin: xxx
   bsky: xxx
 - name: Andy Davidson
   position: PhD Candidate
-  image: /assets/images/mambers/andy_davidson.png
+  image: /assets/images/members/andy_davidson.png
   orcid: xxx
   linkedin: xxx
   bsky: xxx
 - name: Vikas Peddu
   position: PhD Candidate
-  image: /assets/images/daniel_kim.jpg
+  image: /assets/images/members/daniel_kim.jpg
   orcid: xxx
   linkedin: xxx
   bsky: xxx
 - name: Alex Hill
   position: PhD Student
-  image: /assets/images/mambers/alex_hill.jpg
+  image: /assets/images/members/alex_hill.jpg
   orcid: 0000-0001-8903-0297
   linkedin: alexanderdhill
   bsky: https://bsky.app/profile/alexdhill.xyz
 - name: Connor Mattingly
   position: PhD Student
-  image: /assets/images/daniel_kim.jpg
+  image: /assets/images/members/daniel_kim.jpg
   orcid: ""
   linkedin: ""
   bsky: ""
 - name: Shivani Mandalaparthi
   position: Undergraduate
-  image: /assets/images/daniel_kim.jpg
+  image: /assets/images/members/daniel_kim.jpg
   orcid: ""
   linkedin: "test"
   bsky: ""
 - name: Piper Mahn
   position: Undergraduate
-  image: /assets/images/daniel_kim.jpg
+  image: /assets/images/members/daniel_kim.jpg
+  orcid: ""
+  linkedin: ""
+  bsky: ""
+- name: Delaney Boman
+  position: Undergraduate
+  image: /assets/images/members/daniel_kim.jpg
   orcid: ""
   linkedin: ""
   bsky: ""
 
-members:
+alumni:
 - name: Roman Reggiardo
-  position: Post-doc (Stanford RAMP)
-  image: /assets/images/mambers/daniel_kim.jpg
+  position: Post-doctoral Fellow - Stanford RAMP
+  image: /assets/images/members/daniel_kim.jpg
 - name: Sree Lakshmi Velandi Maroli
-  position: Scientist (XXXX)
-  image: /assets/images/mambers/andy_davidson.png
+  position: Scientist - HAYA Therapeutics
+  image: /assets/images/members/andy_davidson.png
 - name: Daniel Arriaza
-  position: Junior Research Specialist (Stanford RAMP)
+  position: Life Science Research - Stanford RAMP
   image: /assets/images/daniel_kim.jpg
   orcid: xxx
   linkedin: xxx
   bsky: xxx
 - name: Mady Chertkow
-  position: PhD Student (UCSF)
-  image: /assets/images/mambers/alex_hill.jpg
+  position: PhD Student - UC Berkeley
+  image: /assets/images/members/alex_hill.jpg
 - name: Queenie Li
-  position: Scientist (Tempus)
-  image: /assets/images/mambers/alex_hill.jpg
+  position: Bioinformatics Analyst - Tempus
+  image: /assets/images/members/alex_hill.jpg
 
 sponsors:
 - name: NIH
@@ -104,9 +110,18 @@ sponsors:
 - name: UCSC RNA Center
   image: /assets/images/rnacenter.png
 
+news:
+- title: ""
+  date: ""
+  description: ""
+  embed: ""
+
 publications:
 - title: "Title of the publication"
   authors: "Author1, Author2, Author3"
   journal: "Journal Name"
-  year: "2021"
-  url: "https://doi.org/10.1101/2021.01.01.425865"
+  volume: 1
+  issue: 2
+  pages: "33-40"
+  date: "2021"
+  doi: "https://doi.org/10.1101/2021.01.01.425865"
