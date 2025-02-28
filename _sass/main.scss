@@ -74,7 +74,6 @@ body {
     margin-right: auto;
     width: 100%;
     max-width: 1440px;
-    min-width: 1080px;
 }
     .tagline {
         display: flex;
@@ -82,7 +81,7 @@ body {
         width: 100%;
         min-height: 35.5em;
         height: calc(50vh - 4em);
-        padding-bottom: 8em;
+        padding-bottom: 4em;
 
         .tagline-image {
             display: flex;
@@ -287,19 +286,25 @@ body {
         padding: 0em 3em;
     }
 
-@media(max-width: 115em) {
+@media(max-width: 120em) {
     .members {
         grid-template-columns: auto auto;
     }
 }
 
-@media (max-width: 1440px) {
-    body {
-        font-size: 12px;
+@media(max-width: 80em) {
+    .members {
+        grid-template-columns: auto;
     }
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1440px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 850px) {
     body {
         font-size: 28px;
     }
