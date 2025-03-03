@@ -64,13 +64,19 @@
                         <p class="member-title">{{member.position}}</p>
                         <div class="member-links">
                             {% if member.orcid != "" %}
-                                <img src="/assets/images/icons/orcid_logo.png" alt="orcid-logo">
+                                <a href="https://orcid.org/{{member.orcid}}" target="_blank">
+                                    <img src="/assets/images/icons/orcid_logo.png" alt="orcid-logo">
+                                </a>
                             {% endif %}
                             {% if member.linkedin != "" %}
-                                <img src="/assets/images/icons/linkedin_logo.png" alt="linkedin-logo">
+                                <a href="https://linkedin.com/in/{{member.linkedin}}" target="_blank">
+                                    <img href="{{member.linkedin}}" src="/assets/images/icons/linkedin_logo.png" alt="linkedin-logo">
+                                </a>
                             {% endif %}
                             {% if member.bsky != "" %}
-                                <img src="/assets/images/icons/bluesky_logo.png" alt="bsky-logo">
+                                <a href="{{member.bsky}}" _target="blank">
+                                    <img href="{{member.bsky}}" src="/assets/images/icons/bluesky_logo.png" alt="bsky-logo">
+                                </a>
                             {% endif %}
                         </div>
                     </div>
@@ -87,16 +93,22 @@
                     </div>
                     <div class="member-content">
                         <p class="member-name">{{member.name}}</p>
-                        <p class="member-title">{{member.position}}</p>
+                        <p class="member-title">{{member.position | replace: "/", "<br/>"}}</p>
                         <div class="member-links">
                             {% if member.orcid != "" %}
-                                <img src="/assets/images/icons/orcid_logo.png" alt="orcid-logo">
+                                <a href="https://orcid.org/{{member.orcid}}" target="_blank">
+                                    <img src="/assets/images/icons/orcid_logo.png" alt="orcid-logo">
+                                </a>
                             {% endif %}
                             {% if member.linkedin != "" %}
-                                <img src="/assets/images/icons/linkedin_logo.png" alt="linkedin-logo">
+                                <a href="https://linkedin.com/in/{{member.linkedin}}" target="_blank">
+                                    <img href="{{member.linkedin}}" src="/assets/images/icons/linkedin_logo.png" alt="linkedin-logo">
+                                </a>
                             {% endif %}
                             {% if member.bsky != "" %}
-                                <img src="/assets/images/icons/bluesky_logo.png" alt="bsky-logo">
+                                <a href="{{member.bsky}}" _target="blank">
+                                    <img href="{{member.bsky}}" src="/assets/images/icons/bluesky_logo.png" alt="bsky-logo">
+                                </a>
                             {% endif %}
                         </div>
                     </div>
@@ -106,7 +118,9 @@
 
             <div class="sponsors">
                 {% for sponsor in site.sponsors %}
-                    <img src="{{sponsor.image}}" alt="sponsor">
+                    <div class="sponsor">
+                        <img src="{{sponsor.image}}" alt="sponsor">
+                    </div>
                 {% endfor %}
             </div>
 

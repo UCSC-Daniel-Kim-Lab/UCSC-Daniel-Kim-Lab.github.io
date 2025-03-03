@@ -43,7 +43,7 @@ members:
   bsky: xxx
 - name: Vikas Peddu
   position: PhD Candidate
-  image: /assets/images/members/daniel_kim.jpg
+  image: /assets/images/members/vikas_peddu.jpg
   orcid: xxx
   linkedin: xxx
   bsky: xxx
@@ -55,60 +55,62 @@ members:
   bsky: https://bsky.app/profile/alexdhill.xyz
 - name: Connor Mattingly
   position: PhD Student
-  image: /assets/images/members/daniel_kim.jpg
+  image: /assets/images/members/connor_mattingly.png
   orcid: ""
   linkedin: ""
   bsky: ""
 - name: Shivani Mandalaparthi
   position: Undergraduate
-  image: /assets/images/members/daniel_kim.jpg
+  image: /assets/images/members/-
   orcid: ""
   linkedin: "test"
   bsky: ""
 - name: Piper Mahn
   position: Undergraduate
-  image: /assets/images/members/daniel_kim.jpg
+  image: /assets/images/members/-
   orcid: ""
   linkedin: ""
   bsky: ""
 - name: Delaney Boman
   position: Undergraduate
-  image: /assets/images/members/daniel_kim.jpg
+  image: /assets/images/members/-
   orcid: ""
   linkedin: ""
   bsky: ""
 
 alumni:
 - name: Roman Reggiardo
-  position: Post-doctoral Fellow - Stanford RAMP
-  image: /assets/images/members/daniel_kim.jpg
+  position: Post-doctoral Fellow/Stanford RAMP
+  image: /assets/images/members/roman_reggiardo.jpg
 - name: Sree Lakshmi Velandi Maroli
-  position: Scientist - HAYA Therapeutics
-  image: /assets/images/members/andy_davidson.png
+  position: Scientist/HAYA Therapeutics
+  image: /assets/images/members/sree_lakshmi.jpg
 - name: Daniel Arriaza
-  position: Life Science Research - Stanford RAMP
-  image: /assets/images/daniel_kim.jpg
+  position: Life Science Research/Stanford RAMP
+  image: /assets/images/members/daniel_arriaza.jpg
   orcid: xxx
   linkedin: xxx
   bsky: xxx
 - name: Mady Chertkow
-  position: PhD Student - UC Berkeley
-  image: /assets/images/members/alex_hill.jpg
+  position: PhD Student/UC Berkeley
+  image: /assets/images/members/mady_chertkow.jpg
 - name: Queenie Li
-  position: Bioinformatics Analyst - Tempus
-  image: /assets/images/members/alex_hill.jpg
+  position: Bioinformatics Analyst/Tempus
+  image: /assets/images/members/queenie_li.jpg
 
 sponsors:
-- name: NIH
-  image: /assets/images/nih.png
-- name: TRDRP
-  image: /assets/images/trdrp.png
-- name: UCSC IBSC
-  image: /assets/images/ibsc.png
+- name: Baskin Engineering
+  image: /assets/images/logos/BE_logo.jpg
 - name: UCSC Genomics Institute
-  image: /assets/images/genomics.png
+  image: /assets/images/logos/GI_logo.png
 - name: UCSC RNA Center
-  image: /assets/images/rnacenter.png
+  image: /assets/images/logos/RNAC_logo.jpg
+- name: UCSC IBSC
+  image: /assets/images/logos/IBSC_logo.png
+- name: NIH
+  image: /assets/images/logos/NIH_logo.png
+- name: TRDRP
+  image: /assets/images/logos/TRDRP_logo.jpg
 
 news:
 - title: ""

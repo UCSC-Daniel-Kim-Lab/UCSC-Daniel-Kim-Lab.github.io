@@ -74,7 +74,8 @@ body {
     margin-right: auto;
     width: 100%;
     max-width: 1440px;
-}
+    overflow: hidden;
+
     .tagline {
         display: flex;
         flex-direction: row;
@@ -236,6 +237,7 @@ body {
 
                 .member-title {
                     font-size: 1.1em;
+                    line-height: 1.25;
                     text-align: left;
                     margin-top: .2em;
                     color: #8a8a8a;
@@ -268,33 +270,32 @@ body {
         margin: 1em 0em;
 
         .sponsor {
-            margin: auto;
-            width: 6em;
-            height: 6em;
+            width: 10vw;
+            height: 10vw;
             justify-content: center;
 
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
-                margin: 0em 2em;
             }
         }
     }
-
-    .publications {
-        padding: 0em 3em;
-    }
+}
 
 @media(max-width: 120em) {
-    .members {
-        grid-template-columns: auto auto;
+    .page {
+        .members {
+            grid-template-columns: auto auto;
+        }
     }
 }
 
 @media(max-width: 80em) {
-    .members {
-        grid-template-columns: auto;
+    .page {
+        .members {
+            grid-template-columns: auto;
+        }
     }
 }
 
@@ -371,11 +372,11 @@ body {
     .members{
         grid-template-columns: auto;
         align-items: center;
-        font-size: 1.5em;
+        font-size: 1.4em;
 
         .member-card {
             min-width: 10em;
-            height: min-content;
+            height: max-content;
             background-color: #efefef;
             border-radius: 1em;
             display: flex;
@@ -394,7 +395,7 @@ body {
 
             .member-content {
                 display: flex;
-                height: 6em;
+                height: max-content;
                 flex-direction: column;
                 justify-content: center;
 
