@@ -22,18 +22,17 @@
                 {% endfor %}
             </div>
         </div>
-        <div class="page">
-            <div id="about"></div>
-            <div class="tagline">
-                <div class="tagline-image">
-                    <img src="{{site.about.background}}" alt="background">
-                </div>
-                <div class="tagline-text">
-                    <p class="short">{{site.about.short}}</p>
-                    <p class="long">{{site.about.long}}</p>
-                </div>
+        <div id="about"></div>
+        <div class="tagline">
+            <div class="tagline-image">
+                <img src="{{site.about.background}}" alt="background">
             </div>
-
+            <div class="tagline-text">
+                <p class="short">{{site.about.short}}</p>
+                <p class="long">{{site.about.long}}</p>
+            </div>
+        </div>
+        <div class="page">
             <p class="section-title" id="research">Research</p>
             <div class="research">
                 <div class="research-content">
@@ -128,13 +127,14 @@
             <div class="publications">
                 {% for publication in site.publications %}
                     <p class="publication">
-                        {{publication.title}}. 
-                        {{publication.authors}}, 
-                        <i>{{publication.journal}}.</i>
-                        <b>{{publication.volume}}</b>({{publication.issue}})
-                        pp{{publication.pages}}.
-                        {{publication.date}}
-                        <a href="{{publication.link}}">doi:{{publication.doi}}</a>
+                        {% if publication.title != "" %}<u>{{publication.title}}</u>. {% endif %}
+                        {% if publication.authors != "" %}{{publication.authors}}, {% endif %}
+                        {% if publication.journal != "" %}<i>{{publication.journal}}</i>.{% endif %}
+                        {% if publication.volume != "" %}<b>{{publication.volume}}</b>{% endif %}
+                        {% if publication.issue != "" %}({{publication.issue}}){% endif %}
+                        {% if publication.pages != "" %}pp{{publication.pages}}.{% endif %}
+                        {% if publication.date != "" %} ({{publication.date}}) {% endif %}
+                        {% if publication.doi != "" %}<a href="{{publication.link}}">doi:{{publication.doi}}</a>{% endif %}
                     </p>
                 {% endfor %}
             </div>

@@ -3,6 +3,8 @@ body {
     font-family: 'Roboto';
     font-weight: 300;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0;
     width: 100vw;
 }
@@ -66,6 +68,53 @@ body {
     }
 }
 
+.tagline {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 35.5em;
+    height: calc(50vh - 4em);
+    padding-bottom: 4em;
+
+    .tagline-image {
+        display: flex;
+        flex-shrink: unset;
+        width: 100%;
+        overflow: visible;
+        max-height: 35em;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .tagline-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 1250px;
+
+        p.short {
+            font-size: 1.2em;
+            padding-left: 1.8em;
+            padding-right: 1.8em;
+            line-height: 1.5;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+
+        p.long {
+            padding-left: 2.2em;
+            padding-right: 2.2em;
+            padding-bottom: 1.1em;
+            line-height: 1.5;
+        }
+    }
+}
+
 .page {
     display: flex;
     flex-direction: column;
@@ -73,62 +122,14 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1500px;
     overflow: hidden;
-
-    .tagline {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        min-height: 35.5em;
-        height: calc(50vh - 4em);
-        padding-bottom: 4em;
-
-        .tagline-image {
-            display: flex;
-            flex-shrink: unset;
-            width: 50%;
-            overflow: visible;
-
-            img {
-                position: absolute;
-                left: 0;
-                width: 50vw;
-                object-fit: cover;
-                height: 35em;
-            }
-        }
-
-        .tagline-text {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 50%;
-
-            p.short {
-                font-size: 1.2em;
-                padding-left: 1.8em;
-                padding-right: 1.8em;
-                line-height: 1.5;
-                font-weight: 400;
-                margin-bottom: 0;
-            }
-
-            p.long {
-                padding-left: 2.2em;
-                padding-right: 2.2em;
-                padding-bottom: 1.1em;
-                line-height: 1.5;
-            }
-        }
-    }
 
     .section-title {
         font-size: 1.5em;
         font-weight: 400;
         margin: auto;
-        margin-bottom: 2.4em;
+        margin-bottom: 2em;
         width: 100%;
         text-align: left;
         padding-left: 2em;
@@ -189,8 +190,8 @@ body {
         margin-bottom: 4em;
         display: grid;
         grid-template-columns: auto auto auto;
-        column-gap: 2em;
-        row-gap: 2.2em;
+        column-gap: 1em;
+        row-gap: 1.5em;
         justify-content: center;
 
         .member-card {
@@ -267,9 +268,11 @@ body {
         justify-content: space-around;
         align-items: center;
         height: min-content;
-        margin: 1em 0em;
+        margin: 1em 0em 3em 0em;
 
         .sponsor {
+            max-width: 150px;
+            max-height: 150px;
             width: 10vw;
             height: 10vw;
             justify-content: center;
@@ -280,6 +283,11 @@ body {
                 object-fit: contain;
             }
         }
+    }
+
+    .publications {
+        margin: 0 4em;
+        font-size: 1.2em;
     }
 }
 
